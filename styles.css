@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -431,6 +432,18 @@ h1 span {
   line-height: 1.45;
 }
 
+.card-note strong {
+  font-weight: 900;
+}
+
+.pricing-legal {
+  max-width: 900px;
+  margin: 2rem 0 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
 .scope-section {
   background: var(--white);
 }
@@ -527,6 +540,20 @@ h1 span {
 .example strong {
   font-size: clamp(1.7rem, 3vw, 3rem);
   letter-spacing: -0.05em;
+}
+
+.booking-reality strong {
+  font-size: clamp(1.05rem, 1.65vw, 1.55rem);
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
+
+.scope-footnote {
+  max-width: 900px;
+  margin: 1rem 0 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .fit-section {
@@ -643,6 +670,164 @@ h1 span {
   font-weight: 700;
 }
 
+.market-section {
+  padding: clamp(5rem, 10vw, 9rem) var(--gutter);
+  border-top: var(--border);
+  background: var(--paper);
+}
+
+.market-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.5fr);
+  align-items: end;
+  gap: clamp(2rem, 8vw, 8rem);
+  margin-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.market-heading h2 {
+  margin: 0;
+  font-size: clamp(3.6rem, 8vw, 8.5rem);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+}
+
+.market-heading > p {
+  margin: 0;
+  padding: 1.25rem;
+  border: var(--border);
+  background: var(--acid);
+  box-shadow: 6px 6px 0 var(--ink);
+  font-size: 0.76rem;
+  font-weight: 800;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.comparison-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: var(--border);
+  background: var(--white);
+  box-shadow: 8px 8px 0 var(--ink);
+  scrollbar-color: var(--ink) var(--paper);
+}
+
+.comparison-hint {
+  display: none;
+}
+
+.comparison-wrap:focus-visible {
+  outline: 4px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 920px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1.25rem;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  vertical-align: top;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.comparison-table tr > *:last-child {
+  border-right: 0;
+}
+
+.comparison-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.comparison-table thead th {
+  background: var(--ink);
+  color: var(--white);
+  font-size: 0.67rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.comparison-table tbody th {
+  width: 21%;
+  font-size: 0.9rem;
+}
+
+.comparison-table tbody th a {
+  text-underline-offset: 0.25em;
+}
+
+.comparison-table tbody th span {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.comparison-table td:nth-child(2),
+.comparison-table td:nth-child(3) {
+  width: 20%;
+  font-weight: 800;
+}
+
+.comparison-self > * {
+  background: var(--blue);
+}
+
+.comparison-self th::before {
+  content: "YOU ARE HERE";
+  display: block;
+  width: max-content;
+  margin-bottom: 0.65rem;
+  padding: 0.25rem 0.4rem;
+  background: var(--acid);
+  font-size: 0.57rem;
+  letter-spacing: 0.08em;
+}
+
+.market-read {
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: var(--border);
+}
+
+.market-read strong {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.market-read p {
+  max-width: 900px;
+  margin: 0;
+  font-size: clamp(1.35rem, 2.4vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+.market-sources {
+  max-width: 900px;
+  margin: 2rem 0 0 auto;
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -703,6 +888,10 @@ h1 span {
   }
 
   .fit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .market-heading {
     grid-template-columns: 1fr;
   }
 
@@ -768,6 +957,20 @@ h1 span {
   .example {
     grid-template-columns: 1fr;
     gap: 0.8rem;
+  }
+
+  .market-read {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-hint {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0.75rem;
+    font-size: 0.67rem;
+    font-weight: 900;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
   }
 
   .cta-section {
