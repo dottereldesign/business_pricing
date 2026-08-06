@@ -321,6 +321,61 @@ h1 span {
   text-transform: uppercase;
 }
 
+.pricing-groups {
+  display: grid;
+  gap: clamp(4rem, 8vw, 7rem);
+}
+
+.pricing-group-when-needed {
+  padding-top: clamp(3rem, 6vw, 5rem);
+  border-top: var(--border);
+}
+
+.pricing-group-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.pricing-group-heading h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 0;
+  font-size: clamp(1.45rem, 2.7vw, 2.6rem);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  text-transform: uppercase;
+}
+
+.pricing-group-heading h3 span {
+  display: grid;
+  width: 2.35rem;
+  height: 2.35rem;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  font-size: 0.62rem;
+  letter-spacing: 0;
+}
+
+.pricing-group-heading p {
+  margin: 0;
+  padding: 0.55rem 0.75rem;
+  border: 2px solid var(--ink);
+  background: var(--white);
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pricing-group-when-needed .pricing-group-heading p {
+  background: var(--orange);
+}
+
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -344,18 +399,31 @@ h1 span {
 }
 
 .price-card-host {
-  grid-column: span 4;
+  grid-column: span 6;
   background: var(--acid);
 }
 
+.price-card-support {
+  grid-column: span 6;
+  background: var(--orange);
+}
+
 .price-card-build {
-  grid-column: span 4;
+  grid-column: span 5;
   background: var(--white);
 }
 
 .price-card-launch {
-  grid-column: span 4;
+  grid-column: span 7;
   background: var(--blue);
+}
+
+.pricing-grid-ongoing .price-card {
+  min-height: 520px;
+}
+
+.pricing-grid-projects .price-card-launch {
+  min-height: 620px;
 }
 
 .card-topline {
@@ -398,9 +466,34 @@ h1 span {
   text-transform: uppercase;
 }
 
-.price-card h3 {
+.price-time .cadence {
+  max-width: 4.5rem;
+  white-space: normal;
+}
+
+.one-off-label {
+  width: max-content;
+  margin-top: 1.4rem;
+  padding: 0.5rem 0.7rem;
+  border: 2px solid var(--ink);
+  background: var(--acid);
+  box-shadow: 3px 3px 0 var(--ink);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transform: rotate(-1.2deg);
+}
+
+.price-card-launch .one-off-label + .price {
+  min-height: 130px;
+  padding-top: 1.6rem;
+}
+
+.price-card h4 {
   margin-bottom: 2rem;
   font-size: clamp(1.35rem, 2vw, 1.9rem);
+  font-weight: 900;
   line-height: 1.05;
   letter-spacing: -0.045em;
 }
@@ -989,10 +1082,11 @@ h1 span {
   }
 
   .price-card-host,
-  .price-card-build {
+  .price-card-support {
     grid-column: span 6;
   }
 
+  .price-card-build,
   .price-card-launch {
     grid-column: span 12;
     min-height: 520px;
@@ -1055,10 +1149,20 @@ h1 span {
   }
 
   .price-card-host,
+  .price-card-support,
   .price-card-build,
   .price-card-launch {
     grid-column: span 12;
     min-height: 520px;
+  }
+
+  .pricing-group-heading {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .pricing-group-heading p {
+    width: max-content;
   }
 
   .scope-grid {
