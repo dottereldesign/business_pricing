@@ -471,6 +471,20 @@ h1 span {
   white-space: normal;
 }
 
+.price-from {
+  flex-wrap: wrap;
+}
+
+.price-prefix {
+  flex-basis: 100%;
+  margin-bottom: 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .one-off-label {
   width: max-content;
   margin-top: 1.4rem;
