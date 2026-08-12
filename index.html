@@ -5,500 +5,267 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Bespoke website pricing from Jamie Wilson: managed care from $50 per month, development at $100 per hour, and custom websites from $3,500."
+      content="Jamie Wilson is an independent web design and development studio in Christchurch, building distinctive, high-performing websites for New Zealand businesses."
     />
     <meta name="author" content="Jamie Wilson" />
     <meta name="theme-color" content="#f2f0e8" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Website Pricing — Jamie Wilson" />
+    <meta property="og:title" content="Jamie Wilson — Web Design & Development" />
     <meta
       property="og:description"
-      content="One developer. Four clear prices. A deliberately small client list."
+      content="Distinctive websites, direct collaboration, and clean development for businesses going somewhere."
     />
-    <title>Website Pricing — Jamie Wilson</title>
+    <title>Jamie Wilson — Web Design & Development, Christchurch</title>
     <script>document.documentElement.classList.add("js");</script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260812c" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
-        "name": "Jamie Wilson — Independent Web Developer",
+        "name": "Jamie Wilson — Web Design & Development",
         "url": "https://dottereldesign.github.io/business_pricing/",
         "email": "howemanning@gmail.com",
         "areaServed": "New Zealand",
-        "priceRange": "NZ$50–NZ$3,500+"
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Christchurch",
+          "addressCountry": "NZ"
+        },
+        "priceRange": "NZ$3,500+"
       }
     </script>
   </head>
-  <body>
+  <body class="home-page">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="https://dottereldesign.github.io/portfolio/" aria-label="Jamie Wilson portfolio">
+      <a class="brand" href="index.html" aria-label="Jamie Wilson home">
         <span class="brand-mark" aria-hidden="true">JW</span>
-        <span>Jamie Wilson<br />Independent web developer</span>
+        <span class="brand-copy">Jamie Wilson<br />Web design &amp; development</span>
       </a>
-      <a class="header-link" href="mailto:howemanning@gmail.com?subject=Website%20enquiry">
-        Start a conversation <span aria-hidden="true">↗</span>
-      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-quick" href="start-here.html">Start here</a>
+        <a class="nav-quick" href="services.html">Services</a>
+        <a class="header-link" href="mailto:howemanning@gmail.com?subject=Website%20project%20enquiry">Start a project <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mega-menu">
+          <span>Menu</span><i aria-hidden="true"></i>
+        </button>
+      </nav>
     </header>
 
     <main id="main">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero home-hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow"><span aria-hidden="true">●</span> Websites for businesses going somewhere</p>
-          <h1 id="hero-title">Bespoke sites.<br /><span>Serious intent.</span></h1>
+          <p class="eyebrow"><span aria-hidden="true">●</span> Independent web studio / Christchurch, NZ</p>
+          <h1 id="hero-title">Websites built<br />to move <span>business.</span></h1>
           <p class="hero-intro">
-            One developer. A deliberately small client list. Straight prices, direct access, and no agency fog.
+            Distinctive design, clean development, and direct collaboration for New Zealand businesses ready to look as good as they are.
           </p>
           <div class="hero-actions">
-            <a class="button button-dark" href="#pricing">See the prices <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="#fit">Why only 100 clients?</a>
+            <a class="button button-dark" href="mailto:howemanning@gmail.com?subject=Website%20project%20enquiry">Tell me about your project <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="pricing.html">View transparent pricing</a>
           </div>
         </div>
 
-        <div class="hero-stamp" aria-label="Maximum of 100 active care clients">
-          <span>Care roster</span>
-          <strong>100</strong>
-          <span>Hard cap</span>
-        </div>
+        <aside class="home-hero-card" aria-label="Studio capabilities">
+          <p>One studio / complete delivery</p>
+          <ol>
+            <li><span>01</span> Strategy</li>
+            <li><span>02</span> Design</li>
+            <li><span>03</span> Development</li>
+            <li><span>04</span> Ongoing care</li>
+          </ol>
+          <strong>NO<br />HAND-OFFS</strong>
+        </aside>
       </section>
 
       <div class="ticker" aria-hidden="true">
         <div class="ticker-track">
-          <span>BESPOKE BY DEFAULT</span><i>✦</i><span>CLEAR SCOPE</span><i>✦</i><span>ONE POINT OF CONTACT</span><i>✦</i>
-          <span>BESPOKE BY DEFAULT</span><i>✦</i><span>CLEAR SCOPE</span><i>✦</i><span>ONE POINT OF CONTACT</span><i>✦</i>
+          <span>STRATEGY WITH A POINT</span><i>✦</i><span>DESIGN WITH CHARACTER</span><i>✦</i><span>CODE BUILT TO LAST</span><i>✦</i>
+          <span>STRATEGY WITH A POINT</span><i>✦</i><span>DESIGN WITH CHARACTER</span><i>✦</i><span>CODE BUILT TO LAST</span><i>✦</i>
         </div>
       </div>
 
-      <section class="pricing-section" id="pricing" aria-labelledby="pricing-title">
+      <section class="home-intro" aria-labelledby="intro-title">
+        <p class="eyebrow reveal">A deliberately small web agency</p>
+        <div class="home-intro-copy reveal">
+          <h2 id="intro-title">Big-agency thinking.<br /><span>None of the fog.</span></h2>
+          <p>
+            Work directly with the person planning, designing, and building your site. Fewer layers means sharper decisions, a clearer process, and a website that actually feels like your business.
+          </p>
+        </div>
+      </section>
+
+      <section class="services-section" id="services" aria-labelledby="services-title">
         <div class="section-heading reveal">
           <div>
-            <p class="eyebrow">Pricing / NZD</p>
-            <h2 id="pricing-title">What repeats.<br />What doesn’t.</h2>
+            <p class="eyebrow">What I do</p>
+            <h2 id="services-title">Useful sites.<br />Made properly.</h2>
           </div>
-          <p>Two ongoing considerations.<br />Two costs only when needed.</p>
+          <p>From first idea<br />to long-term care</p>
         </div>
 
-        <div class="pricing-groups">
-          <section class="pricing-group" aria-labelledby="ongoing-pricing-title">
-            <div class="pricing-group-heading reveal">
-              <h3 id="ongoing-pricing-title"><span>01</span> Ongoing</h3>
-              <p>Plan for these each month</p>
-            </div>
-
-            <div class="pricing-grid pricing-grid-ongoing">
-              <article class="price-card price-card-host reveal">
-                <div class="card-topline"><span>01 / CARE</span><span>ONGOING COST</span></div>
-                <div class="price"><span class="currency">$</span><strong>50</strong><span class="cadence">/ month</span></div>
-                <h4>Hosting is infrastructure.<br />Care is accountability.</h4>
-                <ul>
-                  <li>Managed website hosting</li>
-                  <li>Monitoring, backups and maintenance</li>
-                  <li>One accountable point of contact</li>
-                </ul>
-                <p class="card-note"><strong>This is the recurring operating cost.</strong> It applies while I host and maintain the website.</p>
-              </article>
-
-              <article class="price-card price-card-support reveal">
-                <div class="card-topline"><span>02 / SUPPORT</span><span>INCLUDED MONTHLY</span></div>
-                <div class="price price-time"><strong>15</strong><span class="cadence">min / month</span></div>
-                <h4>Small changes.<br />Already covered.</h4>
-                <ul>
-                  <li>Text and image changes</li>
-                  <li>Add or replace a PDF</li>
-                  <li>Small edits to an existing page</li>
-                </ul>
-                <p class="card-note"><strong>Included with Care at no separate charge.</strong> Unused time does not roll over; new pages and features are development.</p>
-              </article>
-            </div>
-          </section>
-
-          <section class="pricing-group pricing-group-when-needed" aria-labelledby="when-needed-pricing-title">
-            <div class="pricing-group-heading reveal">
-              <h3 id="when-needed-pricing-title"><span>02</span> Only when needed</h3>
-              <p>No retainer. No monthly commitment.</p>
-            </div>
-
-            <div class="pricing-grid pricing-grid-projects">
-              <article class="price-card price-card-build reveal">
-                <div class="card-topline"><span>03 / UPDATES</span><span>AS NEEDED</span></div>
-                <div class="price"><span class="currency">$</span><strong>100</strong><span class="cadence">/ hour</span></div>
-                <h4>New page? New feature?<br />Let’s build it.</h4>
-                <ul>
-                  <li>New pages and layouts</li>
-                  <li>Bookings and integrations</li>
-                  <li>Custom functionality</li>
-                </ul>
-                <p class="card-note"><strong>Not an ongoing fee.</strong> You approve a written estimate before chargeable work starts.</p>
-              </article>
-
-              <article class="price-card price-card-launch reveal">
-                <div class="card-topline"><span>04 / BESPOKE WEBSITE</span><span>ONE-OFF PROJECT</span></div>
-                <div class="one-off-label">Pay once for the agreed build</div>
-                <div class="price price-from"><span class="price-prefix">From</span><span class="currency">$</span><strong>3,500</strong></div>
-                <h4>One website project.<br />One agreed scope.</h4>
-                <ul>
-                  <li>Discovery, structure and visual direction</li>
-                  <li>Responsive design and development</li>
-                  <li>Pages, revisions and launch agreed in writing</li>
-                </ul>
-                <p class="card-note"><strong>This is a one-off project price—not a plan.</strong> E-commerce, complex data and custom apps are quoted separately.</p>
-              </article>
-            </div>
-          </section>
-        </div>
-        <p class="pricing-legal reveal">Prices are in NZD and exclude GST where applicable. Domains, email, paid software, payment processing and other third-party charges are separate and stay in the client’s name.</p>
-      </section>
-
-      <section class="scope-section" aria-labelledby="scope-title">
-        <div class="scope-title reveal">
-          <p class="eyebrow">The useful fine print</p>
-          <h2 id="scope-title">Content ≠ development.</h2>
-        </div>
-
-        <div class="scope-grid">
-          <article class="scope-card scope-included reveal">
-            <span class="scope-label">Included with Care / 15 min monthly</span>
-            <h3>Quick content changes</h3>
+        <div class="services-grid">
+          <article class="service-card service-card-blue reveal">
+            <span class="service-number">01</span>
+            <h3>Web strategy</h3>
+            <p>Clarify the audience, the offer, and the job your website needs to do before pixels start moving.</p>
             <ul>
-              <li><span>01</span> Swap text</li>
-              <li><span>02</span> Change an image</li>
-              <li><span>03</span> Add or replace a PDF</li>
-              <li><span>04</span> Small existing-page edits</li>
+              <li>Discovery &amp; direction</li>
+              <li>Site structure</li>
+              <li>Content planning</li>
             </ul>
           </article>
 
-          <article class="scope-card scope-billed reveal">
-            <span class="scope-label">Billed at $100 per hour</span>
-            <h3>New things that need building</h3>
+          <article class="service-card service-card-acid reveal">
+            <span class="service-number">02</span>
+            <h3>Web design</h3>
+            <p>A considered visual system that makes your business memorable, credible, and easy to understand.</p>
             <ul>
-              <li><span>01</span> Create a new page</li>
-              <li><span>02</span> Add online bookings</li>
-              <li><span>03</span> Connect a new service</li>
-              <li><span>04</span> Build custom functionality</li>
+              <li>Responsive interface design</li>
+              <li>Clear conversion paths</li>
+              <li>Brand-led art direction</li>
+            </ul>
+          </article>
+
+          <article class="service-card service-card-light reveal">
+            <span class="service-number">03</span>
+            <h3>Development</h3>
+            <p>Fast, accessible, maintainable builds without a pile of unnecessary technology getting in the way.</p>
+            <ul>
+              <li>Custom front-end builds</li>
+              <li>CMS &amp; integrations</li>
+              <li>Performance &amp; SEO foundations</li>
+            </ul>
+          </article>
+
+          <article class="service-card service-card-orange reveal">
+            <span class="service-number">04</span>
+            <h3>Website care</h3>
+            <p>Reliable hosting, maintenance, and a familiar person to call when the business—or the website—changes.</p>
+            <ul>
+              <li>Managed hosting</li>
+              <li>Routine maintenance</li>
+              <li>Ongoing improvements</li>
             </ul>
           </article>
         </div>
-
-        <aside class="example booking-reality reveal">
-          <span>Booking reality</span>
-          <p>Bespoke does not mean rebuilding commodity software. I normally integrate a proven booking service that the client owns and pays for.</p>
-          <strong>Simple embed: 2–4h<br />Configured setup: 6–12h<br />Custom workflow: quoted</strong>
-        </aside>
-        <p class="scope-footnote reveal">Planning ranges only, not fixed quotes. Services, staff calendars, payments, reminders, intake forms, migrations, styling and testing all change the work involved.</p>
       </section>
 
-      <section class="fit-section" id="fit" aria-labelledby="fit-title">
-        <div class="fit-heading reveal">
+      <section class="outcomes-section" aria-labelledby="outcomes-title">
+        <div class="outcomes-heading reveal">
+          <p class="eyebrow">More than a nicer homepage</p>
+          <h2 id="outcomes-title">Your website<br />should earn<br /><span>its keep.</span></h2>
+        </div>
+        <div class="outcomes-grid">
+          <article class="outcome-card reveal">
+            <span>01</span>
+            <h3>Make the value obvious</h3>
+            <p>Visitors should quickly understand what you do, why it matters, and what to do next.</p>
+          </article>
+          <article class="outcome-card reveal">
+            <span>02</span>
+            <h3>Build trust before the call</h3>
+            <p>Clear thinking, credible design, and useful proof help the right clients arrive ready to talk.</p>
+          </article>
+          <article class="outcome-card reveal">
+            <span>03</span>
+            <h3>Work on every screen</h3>
+            <p>Responsive, accessible, performance-conscious delivery is part of the build—not an optional extra.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="studio-section" aria-labelledby="studio-title">
+        <div class="studio-copy reveal">
           <p class="eyebrow">Small on purpose</p>
-          <h2 id="fit-title">I don’t want every client.<br /><span>I want the right 100.</span></h2>
+          <h2 id="studio-title">The person you meet is the person who makes it.</h2>
+          <p>
+            I keep the client list intentionally limited so every project gets proper attention. You get direct answers, visible progress, and decisions made with the whole website in mind.
+          </p>
+          <a class="button button-dark" href="https://dottereldesign.github.io/portfolio/">See selected work <span aria-hidden="true">↗</span></a>
         </div>
+        <aside class="studio-proof reveal" aria-label="Studio principles">
+          <p>Built into every project</p>
+          <ul>
+            <li><span>01</span> Clear scope before build</li>
+            <li><span>02</span> Direct senior delivery</li>
+            <li><span>03</span> Bespoke by default</li>
+            <li><span>04</span> Client-owned services</li>
+            <li><span>05</span> Support after launch</li>
+          </ul>
+        </aside>
+      </section>
 
-        <div class="fit-grid">
-          <div class="fit-statement reveal">
-            <p>
-              I’m not building an agency. I’m building a focused, durable roster of businesses where I understand the offer and believe I can contribute.
-            </p>
-            <p>
-              You deal with me. Automation handles repetitive checks and admin; I remain responsible for decisions, quality, privacy and delivery.
-            </p>
+      <section class="process-section" aria-labelledby="process-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">A clear way through</p>
+            <h2 id="process-title">From “maybe”<br />to live.</h2>
           </div>
+          <p>Four stages<br />One point of contact</p>
+        </div>
+        <ol class="process-list">
+          <li class="reveal">
+            <span>01 / Discover</span>
+            <h3>Get to the point</h3>
+            <p>Goals, audience, content, requirements, and a written scope everyone can understand.</p>
+          </li>
+          <li class="reveal">
+            <span>02 / Design</span>
+            <h3>Find the right shape</h3>
+            <p>Structure and visual direction come together into a confident, usable experience.</p>
+          </li>
+          <li class="reveal">
+            <span>03 / Build</span>
+            <h3>Make it real</h3>
+            <p>The approved direction becomes a responsive, tested, production-ready website.</p>
+          </li>
+          <li class="reveal">
+            <span>04 / Launch</span>
+            <h3>Put it to work</h3>
+            <p>Final checks, a tidy handover, and ongoing care if you want it.</p>
+          </li>
+        </ol>
+      </section>
 
-          <div class="fit-list reveal">
-            <p class="fit-list-title">We’ll probably work well together if:</p>
-            <ul>
-              <li>You’re building something real.</li>
-              <li>You value clear advice and quick decisions.</li>
-              <li>You want a long-term web partner, not a revolving door.</li>
-            </ul>
-          </div>
+      <section class="pricing-preview" aria-labelledby="pricing-preview-title">
+        <div class="pricing-preview-copy reveal">
+          <p class="eyebrow">No mystery numbers</p>
+          <h2 id="pricing-preview-title">Clear pricing.<br />Proper scope.</h2>
+          <p>Every website is different, but the commercial starting point should not be a secret.</p>
+          <a class="button button-light" href="pricing.html">Explore pricing &amp; scope <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="mini-prices reveal" aria-label="Pricing summary">
+          <article>
+            <span>Bespoke website</span>
+            <strong><small>From</small> $3,500</strong>
+            <p>One-off project / NZD</p>
+          </article>
+          <article>
+            <span>Managed care</span>
+            <strong>$50 <small>/ month</small></strong>
+            <p>Hosting &amp; maintenance / NZD</p>
+          </article>
         </div>
       </section>
 
-      <section class="cta-section" aria-labelledby="cta-title">
-        <p class="eyebrow">Taking on the right projects</p>
-        <h2 id="cta-title">Think your business<br />belongs on the list?</h2>
-        <a class="button button-light" href="mailto:howemanning@gmail.com?subject=Website%20project%20application">
-          Tell me what you’re building <span aria-hidden="true">↗</span>
+      <section class="cta-section home-cta" aria-labelledby="cta-title">
+        <p class="eyebrow">Have a project in mind?</p>
+        <h2 id="cta-title">Let’s make your<br />website mean<br />business.</h2>
+        <a class="button button-light" href="mailto:howemanning@gmail.com?subject=Website%20project%20enquiry">
+          Start a conversation <span aria-hidden="true">↗</span>
         </a>
         <p class="cta-email">Or email <a href="mailto:howemanning@gmail.com">howemanning@gmail.com</a></p>
-      </section>
-
-      <section class="market-section" id="market" aria-labelledby="market-title">
-        <div class="market-heading reveal">
-          <div>
-            <p class="eyebrow">Christchurch + New Zealand market check / 07 Aug 2026</p>
-            <h2 id="market-title">Know the<br />market.</h2>
-          </div>
-          <p>Real advertised prices. Different scopes. Useful context—not a quality ranking or a claim that every row delivers the same result.</p>
-        </div>
-
-        <nav class="market-index reveal" aria-label="Market comparison sections">
-          <a href="#christchurch-market"><span>01</span> Christchurch market <strong>10</strong></a>
-          <a href="#national-market"><span>02</span> National market <strong>20</strong></a>
-        </nav>
-
-        <div class="market-block" id="christchurch-market">
-          <div class="market-subhead reveal">
-            <div>
-              <p class="eyebrow">01 / Christchurch market</p>
-              <h3>Local field.</h3>
-            </div>
-            <p>Ten providers based in Christchurch or actively selling a dedicated Christchurch offer. The location label makes remote competitors explicit.</p>
-          </div>
-
-          <p class="comparison-hint reveal" aria-hidden="true">Swipe to compare <span>→</span></p>
-          <div class="comparison-wrap reveal" tabindex="0" role="region" aria-label="Christchurch website pricing comparison; scroll horizontally on small screens">
-            <table class="comparison-table">
-              <caption class="sr-only">Advertised website pricing from ten providers in the Christchurch market, plus Jamie Wilson's offer.</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Provider / base</th>
-                  <th scope="col">Advertised build price</th>
-                  <th scope="col">Ongoing / hourly</th>
-                  <th scope="col">Publicly stated scope</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"><a href="https://truedesign.co.nz/web/index.html" target="_blank" rel="noreferrer">True Design</a><span>Christchurch / fixed package</span></th>
-                  <td>$999–$1,499 + GST</td>
-                  <td>Hosting excluded</td>
-                  <td>Roughly 3–6 pages, responsive build, supplied content and stock images.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://www.digitalpresence.co.nz/" target="_blank" rel="noreferrer">Digital Presence</a><span>Christchurch / subscription</span></th>
-                  <td>$0 upfront</td>
-                  <td>$95–$239/month</td>
-                  <td>1–15 pages by tier; hosting, SSL, basic SEO and 15 minutes of monthly edits.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://www.activate.co.nz/info/new-business-package/" target="_blank" rel="noreferrer">Activate Design</a><span>Christchurch / launch bundle</span></th>
-                  <td>$4,995 + GST</td>
-                  <td>Six months hosting included</td>
-                  <td>Website plus logo, business cards, NZ domain, hosting and email setup.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://christchurchwebsitedesign.co.nz/" target="_blank" rel="noreferrer">Christchurch Website Design</a><span>Christchurch / static package</span></th>
-                  <td>$399–$699 + GST</td>
-                  <td>Domain from $39.95 + GST/year</td>
-                  <td>Three or seven static pages; larger tier lists a form, map and gallery.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://wcloud.nz/" target="_blank" rel="noreferrer">White Cloud</a><span>Christchurch / rapid package</span></th>
-                  <td>$299–$1,099</td>
-                  <td>Care $49–$99/month; hosting separate</td>
-                  <td>3–10 pages by tier, basic-to-full SEO, forms and 5–10 day delivery.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://www.whatifweb.co.nz/blog/how-much-does-a-website-cost-in-christchurch" target="_blank" rel="noreferrer">What IF Web</a><span>Christchurch / premium Webflow</span></th>
-                  <td>Typically $8,000–$20,000</td>
-                  <td>Quoted by scope</td>
-                  <td>Its published guide says this is its usual band for custom marketing sites and full brand builds.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://eightysix.digital/web-design/web-design-christchurch/" target="_blank" rel="noreferrer">EightySix Digital</a><span>Christchurch / custom WordPress</span></th>
-                  <td>From $900 + GST</td>
-                  <td>$300 + GST/year after year one</td>
-                  <td>One custom page; extra pages from $300 + GST. First-year hosting and Elementor Pro included.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://webrefresh.co.nz/web-design-christchurch/" target="_blank" rel="noreferrer">WebRefresh</a><span>Hawke's Bay / serves Christchurch</span></th>
-                  <td>$499–$1,299 incl. GST</td>
-                  <td>Quoted add-ons</td>
-                  <td>4–15 pages by fixed tier, mobile-first build, enquiry flow and basic on-page SEO.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://growmybusiness.co.nz/christchurch-website-design/" target="_blank" rel="noreferrer">Grow My Business</a><span>Wellington / serves Christchurch</span></th>
-                  <td>From $3,995 + GST</td>
-                  <td>Care from about $49/month</td>
-                  <td>Custom WordPress build with strategy, SEO foundations and a stated 6–8 week timeframe.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://kyweb.nz/website-design-christchurch/" target="_blank" rel="noreferrer">KY Web</a><span>NZ-wide / serves Christchurch</span></th>
-                  <td>$2,499–$7,999+</td>
-                  <td>No required retainer</td>
-                  <td>3–5 page foundation through custom builds, fixed pricing, on-page SEO and client ownership.</td>
-                </tr>
-                <tr class="comparison-self">
-                  <th scope="row">Jamie Wilson<span>Christchurch / solo bespoke</span></th>
-                  <td>From $3,500</td>
-                  <td>Care from $50/month; $100/hour</td>
-                  <td>Direct senior delivery, agreed bespoke scope and client-owned third-party services.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="market-block" id="national-market">
-          <div class="market-subhead reveal">
-            <div>
-              <p class="eyebrow">02 / National market</p>
-              <h3>The NZ 20.</h3>
-            </div>
-            <p>Twenty New Zealand providers across the price spectrum. Christchurch businesses are deliberately included in this national view.</p>
-          </div>
-
-          <p class="comparison-hint reveal" aria-hidden="true">Swipe to compare <span>→</span></p>
-          <div class="comparison-wrap reveal" tabindex="0" role="region" aria-label="New Zealand website pricing comparison; scroll horizontally on small screens">
-            <table class="comparison-table comparison-table-national">
-              <caption class="sr-only">Advertised website pricing from twenty New Zealand providers, including Christchurch providers, plus Jamie Wilson's offer.</caption>
-              <thead>
-                <tr>
-                  <th scope="col">Provider / base</th>
-                  <th scope="col">Advertised build price</th>
-                  <th scope="col">Ongoing / hourly</th>
-                  <th scope="col">Publicly stated scope</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row"><a href="https://truedesign.co.nz/web/index.html" target="_blank" rel="noreferrer">True Design</a><span>Christchurch</span></th>
-                  <td>$999–$1,499 + GST</td>
-                  <td>Hosting excluded</td>
-                  <td>Fixed 3–6 page packages using supplied content.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://www.digitalpresence.co.nz/" target="_blank" rel="noreferrer">Digital Presence</a><span>Christchurch</span></th>
-                  <td>$0 upfront</td>
-                  <td>$95–$239/month</td>
-                  <td>Subscription model with hosting, SSL, basic SEO and limited edits.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://www.activate.co.nz/info/new-business-package/" target="_blank" rel="noreferrer">Activate Design</a><span>Christchurch</span></th>
-                  <td>$4,995 + GST</td>
-                  <td>Six months hosting included</td>
-                  <td>Bundled brand launch: website, logo, cards, domain and email setup.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://christchurchwebsitedesign.co.nz/" target="_blank" rel="noreferrer">Christchurch Website Design</a><span>Christchurch</span></th>
-                  <td>$399–$699 + GST</td>
-                  <td>Domain from $39.95 + GST/year</td>
-                  <td>Three or seven static pages with fixed inclusions.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://wcloud.nz/" target="_blank" rel="noreferrer">White Cloud</a><span>Christchurch</span></th>
-                  <td>$299–$1,099</td>
-                  <td>Care $49–$99/month</td>
-                  <td>Rapid 3–10 page packages; hosting remains a client cost.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://www.whatifweb.co.nz/blog/how-much-does-a-website-cost-in-christchurch" target="_blank" rel="noreferrer">What IF Web</a><span>Christchurch</span></th>
-                  <td>Typically $8,000–$20,000</td>
-                  <td>Quoted by scope</td>
-                  <td>Strategy-led custom Webflow marketing sites and brand builds.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://eightysix.digital/web-design/web-design-christchurch/" target="_blank" rel="noreferrer">EightySix Digital</a><span>Christchurch</span></th>
-                  <td>From $900 + GST</td>
-                  <td>$300 + GST/year after year one</td>
-                  <td>Custom WordPress one-pager; additional pages from $300 + GST.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://webrefresh.co.nz/web-design-christchurch/" target="_blank" rel="noreferrer">WebRefresh</a><span>Hawke's Bay / NZ-wide</span></th>
-                  <td>$499–$1,299 incl. GST</td>
-                  <td>Quoted add-ons</td>
-                  <td>Fixed 4–15 page packages focused on small-business enquiries.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://growmybusiness.co.nz/christchurch-website-design/" target="_blank" rel="noreferrer">Grow My Business</a><span>Wellington / NZ-wide</span></th>
-                  <td>From $3,995 + GST</td>
-                  <td>Care from about $49/month</td>
-                  <td>Custom WordPress, strategy, SEO foundations and support plans.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://kyweb.nz/website-design-christchurch/" target="_blank" rel="noreferrer">KY Web</a><span>NZ-wide</span></th>
-                  <td>$2,499–$7,999+</td>
-                  <td>No required retainer</td>
-                  <td>Fixed-price small-business through custom builds with client ownership.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://www.mergemedia.co.nz/web-design-prices/" target="_blank" rel="noreferrer">Merge Media</a><span>East Auckland</span></th>
-                  <td>From $2,499 + GST</td>
-                  <td>$95 + GST/month; updates $160/hour</td>
-                  <td>Five pages, one revision, content entry, basic SEO and analytics.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://www.bigmark.co.nz/services/small-business-website-packages" target="_blank" rel="noreferrer">Big Mark</a><span>Wellington</span></th>
-                  <td>$3,000–$10,000 + GST</td>
-                  <td>Platform extra; fixes from $150/hour</td>
-                  <td>Custom Webflow design, accessibility and SEO foundations.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://sevendayweb.co.nz/web-design-pricing/" target="_blank" rel="noreferrer">Seven Day Web</a><span>NZ-wide</span></th>
-                  <td>$1,000–$5,000</td>
-                  <td>No GST added</td>
-                  <td>One-page, multi-page and copy-led fixed packages by tier.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://www.nzwebdesign.co.nz/website-packages" target="_blank" rel="noreferrer">NZ Web Design</a><span>Orewa, Auckland</span></th>
-                  <td>$4,990 + GST</td>
-                  <td>Hosting $49 + GST/month</td>
-                  <td>Custom business site, workshop, CMS, SEO setup, forms and training.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://groundworkdigital.co.nz/services" target="_blank" rel="noreferrer">Groundwork Digital</a><span>West Auckland</span></th>
-                  <td>$749–$1,449 incl. GST</td>
-                  <td>No monthly fee stated</td>
-                  <td>One-page or five-page package with SEO setup and hosting setup.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://revcollective.co.nz/prices-packages/" target="_blank" rel="noreferrer">Revolution Collective</a><span>Hamilton / Auckland</span></th>
-                  <td>From $999–$3,500 + GST</td>
-                  <td>Monthly plans available</td>
-                  <td>Landing pages, custom business sites and WooCommerce tiers.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://www.ffieldsdesign.co.nz/packages-for-small-business/" target="_blank" rel="noreferrer">FFields Design</a><span>Wellington</span></th>
-                  <td>$1,250 + GST</td>
-                  <td>Hosting and domain extra</td>
-                  <td>Four-page WordPress package; broader startup bundle is $1,500–$2,000.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://baywebco.nz/services/web-design-tauranga/" target="_blank" rel="noreferrer">Bay Web Co</a><span>Tauranga</span></th>
-                  <td>$3,500–$5,500 + GST</td>
-                  <td>Care from $49 + GST/month</td>
-                  <td>Custom 5–10+ page WordPress builds with SEO and conversion structure.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://web2go.co.nz/" target="_blank" rel="noreferrer">Web2go</a><span>Nelson</span></th>
-                  <td>$2,450–$7,950 + GST</td>
-                  <td>Not publicly itemised</td>
-                  <td>Six-page starter, nine-page advanced and 12-page ecommerce packages.</td>
-                </tr>
-                <tr>
-                  <th scope="row"><a href="https://constantino.co.nz/packages/" target="_blank" rel="noreferrer">Constantino</a><span>Auckland</span></th>
-                  <td>$640–$2,520</td>
-                  <td>One year hosting included</td>
-                  <td>Pre-designed five-page or custom six-page WordPress packages.</td>
-                </tr>
-                <tr class="comparison-self">
-                  <th scope="row">Jamie Wilson<span>Christchurch / solo bespoke</span></th>
-                  <td>From $3,500</td>
-                  <td>Care from $50/month; $100/hour</td>
-                  <td>Direct senior delivery, agreed bespoke scope and client-owned third-party services.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="market-read reveal">
-          <strong>The honest read</strong>
-          <p>$3,500 positions this offer above rapid and template-led packages while remaining accessible beside established small-business specialists and below strategy-heavy studio engagements.</p>
-        </div>
-        <p class="market-sources reveal">Method: 20 providers selected for geographic spread, visible small-business offers and relevance—not ranked by quality. Public prices checked 07 Aug 2026 from the linked provider pages. “From” prices, GST treatment, hosting, content, revisions and functionality vary. Confirm scope directly before buying.</p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Jamie Wilson / Independent web developer</p>
+      <p>Jamie Wilson / Web design &amp; development</p>
       <p>Christchurch, New Zealand / <span data-year>2026</span></p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js?v=20260812c" defer></script>
   </body>
 </html>

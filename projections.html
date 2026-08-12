@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An adjustable 12-month revenue, profit and income-tax projection for Jamie Wilson's New Zealand web studio." />
+    <meta name="author" content="Jamie Wilson" />
+    <meta name="theme-color" content="#f2f0e8" />
+    <title>Revenue Projections — Jamie Wilson Web Studio</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=20260812c" />
+  </head>
+  <body class="guide-page projections-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><a class="brand" href="index.html" aria-label="Jamie Wilson home"><span class="brand-mark" aria-hidden="true">JW</span><span class="brand-copy">Jamie Wilson<br />Business control room</span></a><nav class="site-nav" aria-label="Primary navigation"><a class="nav-quick" href="start-here.html">Start here</a><a class="nav-quick" href="services.html">Services</a><a class="header-link" href="mailto:howemanning@gmail.com?subject=Website%20project%20enquiry">Start a project <span aria-hidden="true">↗</span></a><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mega-menu"><span>Menu</span><i aria-hidden="true"></i></button></nav></header>
+
+    <main id="main">
+      <section class="guide-hero guide-hero--acid" aria-labelledby="hero-title">
+        <div class="guide-hero__copy"><p class="eyebrow"><span aria-hidden="true">●</span> 12-month model / Change every assumption</p><h1 id="hero-title">Forecast the<br /><span>machine.</span></h1><p class="hero-intro">Revenue is not a wish. It is leads × close rate × project value, plus recurring work. Change the inputs and see what the business would need to produce.</p><div class="hero-actions"><a class="button button-dark" href="#model">Run the model <span aria-hidden="true">↓</span></a><a class="text-link" href="sales.html">Build the pipeline</a></div></div>
+        <aside class="guide-hero__aside"><span>Default base case</span><strong>5<br />leads</strong><p>Starting monthly qualified leads, growing 6% each month, closing at an expected 20%.</p><small>Fractional jobs are expected-value maths, not a promise that 0.8 of a client arrives.</small></aside>
+      </section>
+
+      <section class="guide-section guide-section--tight"><div class="reality-check reveal"><span>Forecast rule</span><p>Do not put “grow consistently” into a spreadsheet without defining the mechanism. Lead growth requires activity; close rate requires fit and sales skill; project value requires scope and trust; delivery capacity sets the ceiling.</p></div></section>
+
+      <section class="guide-section" id="model" aria-labelledby="model-title">
+        <header class="guide-section__head reveal"><div><p class="eyebrow">Interactive base case</p><h2 id="model-title">Twelve months,<br />visible assumptions.</h2></div><p>All figures are NZD and before GST. Profit subtracts the annual overhead and variable-cost assumptions you enter. Tax is a simplified individual income-tax estimate.</p></header>
+        <div class="tool-panel reveal" data-projection-calculator>
+          <div class="tool-panel__controls">
+            <div class="field-grid">
+              <div class="tool-field"><label for="projection-leads">Starting qualified leads / month</label><input id="projection-leads" type="number" min="0" step="1" value="5" data-projection-leads /></div>
+              <div class="tool-field"><label for="projection-growth">Monthly lead growth %</label><input id="projection-growth" type="number" min="-50" max="100" step="1" value="6" data-projection-growth /></div>
+              <div class="tool-field"><label for="projection-close">Close rate %</label><input id="projection-close" type="number" min="0" max="100" step="1" value="20" data-projection-close /></div>
+              <div class="tool-field"><label for="projection-value">Average project value</label><input id="projection-value" type="number" min="0" step="250" value="3500" data-projection-value /></div>
+              <div class="tool-field"><label for="projection-care-start">Starting care clients</label><input id="projection-care-start" type="number" min="0" step="1" value="2" data-projection-care-start /></div>
+              <div class="tool-field"><label for="projection-care-adds">Care clients added / month</label><input id="projection-care-adds" type="number" min="0" step="1" value="1" data-projection-care-adds /></div>
+              <div class="tool-field"><label for="projection-care-fee">Care fee / month</label><input id="projection-care-fee" type="number" min="0" step="10" value="50" data-projection-care-fee /></div>
+              <div class="tool-field"><label for="projection-overhead">Annual fixed overhead</label><input id="projection-overhead" type="number" min="0" step="100" value="5286" data-projection-overhead /></div>
+              <div class="tool-field"><label for="projection-variable">Variable costs % of revenue</label><input id="projection-variable" type="number" min="0" max="100" step="1" value="5" data-projection-variable /></div>
+            </div>
+            <p class="tool-note">“Qualified lead” means someone with a real problem, plausible budget, authority and timeframe—not a page view.</p>
+          </div>
+          <div class="tool-panel__results">
+            <div class="tool-result-grid"><div class="tool-result"><span>Year-one revenue</span><strong data-projection-revenue>NZ$63,500</strong></div><div class="tool-result"><span>Expected projects</span><strong data-projection-projects>16.9</strong></div><div class="tool-result"><span>Care revenue</span><strong data-projection-care>NZ$4,500</strong></div><div class="tool-result"><span>Estimated profit</span><strong data-projection-profit>NZ$55,000</strong></div><div class="tool-result"><span>Income tax estimate</span><strong data-projection-tax>NZ$8,700</strong></div><div class="tool-result"><span>After income tax</span><strong data-projection-after>NZ$46,300</strong></div></div>
+            <div class="projection-chart" data-projection-chart aria-label="Projected monthly revenue bar chart"></div><div class="projection-axis" aria-hidden="true"><span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span></div>
+            <p class="tool-note" data-projection-note>Estimated after-tax figure excludes ACC, student loan, KiwiSaver, GST, credits and personal adjustments. It is not the same as cash available.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--ink" aria-labelledby="scenarios-title">
+        <header class="guide-section__head reveal"><div><p class="eyebrow">Sanity-check scenarios</p><h2 id="scenarios-title">Three futures.<br />None guaranteed.</h2></div><p>These are directional examples, not market promises. The base case uses the calculator defaults.</p></header>
+        <div class="guide-grid">
+          <article class="guide-card guide-card--4 reveal"><span class="guide-card__label">Conservative / Build proof</span><span class="guide-card__price">~$30k–$45k<small>Revenue / planning band</small></span><h3>Uneven early pipeline</h3><p>Roughly 7–11 projects at $3k–$3.5k plus a small care base. Useful if the first half is dominated by learning and portfolio conversion.</p></article>
+          <article class="guide-card guide-card--4 guide-card--acid reveal"><span class="guide-card__label">Base / Repeat the habit</span><span class="guide-card__price">~$55k–$75k<small>Revenue / planning band</small></span><h3>One to two wins a month</h3><p>Requires a real lead habit, controlled delivery and average project value around the current $3,500 starting price.</p></article>
+          <article class="guide-card guide-card--4 guide-card--blue reveal"><span class="guide-card__label">Strong / Capacity pressure</span><span class="guide-card__price">~$90k–$130k<small>Revenue / planning band</small></span><h3>Better projects, not just more</h3><p>Likely requires higher average value, productised delivery, partner capacity or fewer large engagements. Volume alone can break a solo operator.</p></article>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--blue" aria-labelledby="capacity-title">
+        <header class="guide-section__head reveal"><div><p class="eyebrow">Capacity reality</p><h2 id="capacity-title">Revenue has a<br />delivery cost.</h2></div><p>At $3,500 per project, NZ$100k in project revenue means about 29 projects. That is more than two full websites every month before sales, admin, support and time off.</p></header>
+        <div class="guide-grid">
+          <article class="guide-card guide-card--4 reveal"><span class="guide-card__label">Lever one</span><h3>Raise average value</h3><p>Add high-value discovery, content structure, collateral, integrations and improvement plans when they solve the client’s job.</p></article>
+          <article class="guide-card guide-card--4 guide-card--acid reveal"><span class="guide-card__label">Lever two</span><h3>Reduce delivery variance</h3><p>Reusable checklists, starter components and defined content inputs improve margin without making every site look the same.</p></article>
+          <article class="guide-card guide-card--4 reveal"><span class="guide-card__label">Lever three</span><h3>Add careful recurring revenue</h3><p>Care smooths the floor, but $50/month alone needs many clients. Improvement retainers can carry more value if responsibility and capacity are explicit.</p></article>
+        </div>
+      </section>
+
+      <section class="guide-section" aria-labelledby="metrics-title">
+        <header class="guide-section__head reveal"><div><p class="eyebrow">Weekly leading indicators</p><h2 id="metrics-title">Track what creates<br />the revenue.</h2></div><p>Annual revenue is too delayed to tell you what to do on Tuesday.</p></header>
+        <div class="metric-strip reveal"><div><span>Prospecting</span><strong>25<small><br />quality touches / week</small></strong></div><div><span>Conversations</span><strong>3–5<small><br />useful replies / week</small></strong></div><div><span>Calls</span><strong>1–3<small><br />qualified / week</small></strong></div><div><span>Follow-up</span><strong>100%<small><br />with a next date</small></strong></div></div>
+      </section>
+
+      <section class="guide-section guide-section--orange" aria-labelledby="rules-title"><header class="guide-section__head reveal"><div><p class="eyebrow">Forecast rules</p><h2 id="rules-title">Keep the model<br />honest.</h2></div><p>Update monthly with actuals, not confidence.</p></header><ol class="number-list reveal"><li><div><strong>Separate booked, likely and aspirational revenue.</strong><p>A proposal is not cash; a verbal yes is not a deposit.</p></div></li><li><div><strong>Model payment timing.</strong><p>Deposits and milestones matter more to cash flow than annual invoice totals.</p></div></li><li><div><strong>Include non-billable time.</strong><p>Sales, admin, learning, sick days and holidays are real capacity.</p></div></li><li><div><strong>Use a downside case.</strong><p>Ask what happens if leads stop growing, one invoice is 30 days late, or a project overruns.</p></div></li><li><div><strong>Do not call revenue take-home.</strong><p>Subtract direct costs, overhead, tax and ACC; then preserve working capital.</p></div></li></ol></section>
+    </main>
+
+    <footer class="site-footer"><p>Projection model / Planning only / NZD before GST</p><p><a href="tax.html">Review the tax assumptions</a> / <a href="budget.html">Review annual costs</a></p></footer>
+    <script src="script.js?v=20260812c" defer></script>
+    <script src="business-tools.js" defer></script>
+  </body>
+</html>
