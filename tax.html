@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A plain-English 2026 New Zealand tax guide and income tax estimator for a self-employed web developer, including GST, provisional tax and ACC." />
+    <meta name="author" content="Jamie Wilson" />
+    <meta name="theme-color" content="#f2f0e8" />
+    <title>NZ Tax Explained — Jamie Wilson</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=20260812c" />
+  </head>
+  <body class="guide-page tax-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header"><a class="brand" href="index.html" aria-label="Jamie Wilson home"><span class="brand-mark" aria-hidden="true">JW</span><span class="brand-copy">Jamie Wilson<br />Business control room</span></a><nav class="site-nav" aria-label="Primary navigation"><a class="nav-quick" href="start-here.html">Start here</a><a class="nav-quick" href="services.html">Services</a><a class="header-link" href="mailto:howemanning@gmail.com?subject=Website%20project%20enquiry">Start a project <span aria-hidden="true">↗</span></a><button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mega-menu"><span>Menu</span><i aria-hidden="true"></i></button></nav></header>
+
+    <main id="main">
+      <section class="guide-hero guide-hero--blue" aria-labelledby="hero-title">
+        <div class="guide-hero__copy"><p class="eyebrow"><span aria-hidden="true">●</span> New Zealand tax / Current at August 2026</p><h1 id="hero-title">Tax, minus<br />the <span>fog.</span></h1><p class="hero-intro">As a sole trader, income tax is based on net profit—not every dollar invoiced. GST is a separate system. ACC is another bill. The clean habit is to reserve as you earn.</p><div class="hero-actions"><a class="button button-dark" href="#estimator">Estimate income tax <span aria-hidden="true">↓</span></a><a class="text-link" href="accounting.html">Set up the accounts</a></div></div>
+        <aside class="guide-hero__aside"><span>Core equation</span><strong>Sales<br />− costs</strong><p>= net profit. Add other taxable income as relevant, then progressive rates apply.</p><small>Calculator excludes ACC, student loan, KiwiSaver, tax credits, losses and individual adjustments.</small></aside>
+      </section>
+
+      <section class="guide-section guide-section--tight"><div class="legal-note reveal"><span>Not tax advice</span><p>This page uses current published IRD rates for planning. Your final liability depends on your full circumstances. Confirm setup, deductions, GST and filing with IRD, Hnry or a qualified NZ tax adviser.</p></div></section>
+
+      <section class="guide-section" id="estimator" aria-labelledby="estimator-title">
+        <header class="guide-section__head reveal"><div><p class="eyebrow">Sole trader income tax estimator</p><h2 id="estimator-title">Model profit,<br />not revenue.</h2></div><p>Enter total taxable income after deductible business costs. If you also have salary, interest or other taxable income, include it for a useful marginal-rate estimate.</p></header>
+        <div class="tool-panel reveal" data-tax-calculator>
+          <div class="tool-panel__controls"><div class="tool-field"><label for="tax-profit">Estimated annual taxable income / profit</label><input id="tax-profit" type="number" min="0" step="1000" value="60000" data-tax-income /></div><div class="tool-field"><label for="tax-paid">Tax already deducted or paid</label><input id="tax-paid" type="number" min="0" step="100" value="0" data-tax-paid /></div><p class="tool-note">Use this to plan a reserve. It is not a return and does not calculate GST or ACC.</p></div>
+          <div class="tool-panel__results"><div class="tool-result-grid"><div class="tool-result"><span>Estimated income tax</span><strong data-tax-total>NZ$10,221</strong></div><div class="tool-result"><span>Effective tax rate</span><strong data-tax-effective>17.0%</strong></div><div class="tool-result"><span>Top marginal rate</span><strong data-tax-marginal>30%</strong></div><div class="tool-result"><span>After income tax</span><strong data-tax-after>NZ$49,780</strong></div><div class="tool-result"><span>Still to reserve</span><strong data-tax-reserve>NZ$10,221</strong></div><div class="tool-result"><span>Monthly reserve pace</span><strong data-tax-monthly>NZ$852</strong></div></div><p class="tool-note" data-tax-warning>At this profit level, check whether taxable turnover has crossed the separate NZ$60,000 GST threshold. Estimated residual tax above NZ$5,000 can also trigger provisional tax for the following year.</p></div>
+        </div>
+      </section>
+
+      <section class="guide-section guide-section--ink" aria-labelledby="rates-title">
+        <header class="guide-section__head reveal"><div><p class="eyebrow">Individual income tax rates</p><h2 id="rates-title">Progressive,<br />not one flat rate.</h2></div><p>Moving into a higher band does not re-tax all earlier income. Only dollars inside that band use that rate.</p></header>
+        <div class="comparison-wrap reveal" tabindex="0" role="region" aria-label="New Zealand individual tax rates; scroll horizontally on small screens"><table class="decision-table"><thead><tr><th>Band from 1 April 2025</th><th>Rate on dollars in this band</th><th>Tax across full band</th></tr></thead><tbody><tr><th>NZ$0–$15,600</th><td>10.5%</td><td>Up to NZ$1,638</td></tr><tr><th>NZ$15,601–$53,500</th><td>17.5%</td><td>NZ$6,632.50 across this band</td></tr><tr><th>NZ$53,501–$78,100</th><td>30%</td><td>NZ$7,380 across this band</td></tr><tr><th>NZ$78,101–$180,000</th><td>33%</td><td>NZ$33,627 across this band</td></tr><tr><th>NZ$180,001+</th><td>39%</td><td>No upper limit</td></tr></tbody></table></div>
+        <div class="source-list reveal"><a href="https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals" target="_blank" rel="noreferrer">IRD individual tax rates ↗</a></div>
+      </section>
+
+      <section class="guide-section guide-section--acid" aria-labelledby="examples-title">
+        <header class="guide-section__head reveal"><div><p class="eyebrow">Worked planning examples</p><h2 id="examples-title">What the brackets<br />look like.</h2></div><p>Income tax only, assuming the figure shown is total taxable income. Rounded to the nearest dollar.</p></header>
+        <div class="metric-strip reveal"><div><span>NZ$35k taxable</span><strong>$5,033<br /><small>14.4%</small></strong></div><div><span>NZ$60k taxable</span><strong>$10,221<br /><small>17.0%</small></strong></div><div><span>NZ$100k taxable</span><strong>$22,878<br /><small>22.9%</small></strong></div><div><span>Not included</span><strong>ACC +<br />GST</strong></div></div>
+      </section>
+
+      <section class="guide-section" aria-labelledby="systems-title">
+        <header class="guide-section__head reveal"><div><p class="eyebrow">Four systems to understand</p><h2 id="systems-title">They are related.<br />They are not the same.</h2></div><p>Most confusion comes from calling every government payment “tax.”</p></header>
+        <div class="guide-grid">
+          <article class="guide-card guide-card--6 guide-card--blue reveal"><span class="guide-card__label">01 / Income tax</span><h3>Tax on taxable profit/income</h3><p>Self-employed people use their individual IRD number, generally report net profit in an IR3, and can claim eligible business expenses with records.</p><ul class="plain-list"><li>NZ tax year is normally 1 April to 31 March</li><li>IR3 is generally due 7 July unless a tax agent or extension applies</li><li>Other income can change the total and marginal rate</li><li>First year is not tax-free</li></ul></article>
+          <article class="guide-card guide-card--6 guide-card--acid reveal"><span class="guide-card__label">02 / GST</span><h3>Tax collected on taxable supplies</h3><p>Registration is required if turnover was over NZ$60,000 in the last 12 months or is expected to exceed it in the next 12 months. Voluntary registration is possible below that.</p><ul class="plain-list"><li>Standard GST rate is 15%</li><li>GST portion of an inclusive price is 3/23</li><li>Claim eligible input GST with evidence</li><li>GST collected is not revenue</li></ul></article>
+          <article class="guide-card guide-card--6 guide-card--orange reveal"><span class="guide-card__label">03 / Provisional tax</span><h3>Next year’s income tax paid during the year</h3><p>IRD says provisional tax generally applies when residual income tax from the previous return is more than NZ$5,000. It spreads tax into instalments rather than one lump sum.</p><ul class="plain-list"><li>Due dates depend on method, balance date and GST frequency</li><li>Late surprises hurt cash flow</li><li>Voluntary early payments may be possible</li><li>Tax pooling may help in some situations—ask an adviser</li></ul></article>
+          <article class="guide-card guide-card--6 reveal"><span class="guide-card__label">04 / ACC levies</span><h3>Separate ACC invoice</h3><p>Self-employed levies depend on liable income, business Classification Unit and cover type. ACC says self-employed people generally pay three levies and are invoiced after income is reported to IRD.</p><ul class="plain-list"><li>Check the Business Industry Classification code</li><li>Default cover is generally CoverPlus unless another cover is chosen</li><li>Do not use a generic percentage as a final estimate</li><li>Use ACC’s official levy estimator</li></ul></article>
+        </div>
+        <div class="source-list reveal"><a href="https://www.ird.govt.nz/roles/self-employed" target="_blank" rel="noreferrer">IRD self-employed ↗</a><a href="https://www.ird.govt.nz/income-tax/provisional-tax" target="_blank" rel="noreferrer">IRD provisional tax ↗</a><a href="https://www.acc.co.nz/for-business/received-an-invoice/calculate-your-levies" target="_blank" rel="noreferrer">ACC levy calculator guidance ↗</a></div>
+      </section>
+
+      <section class="guide-section guide-section--orange" aria-labelledby="cash-title">
+        <header class="guide-section__head reveal"><div><p class="eyebrow">Cash-flow trap</p><h2 id="cash-title">A great month can<br />create a bad bill.</h2></div><p>Tax arrives later than the work. Without reserves, success can make the bank balance lie.</p></header>
+        <div class="reality-check reveal"><span>Do this</span><p>When an invoice is paid, move GST immediately if registered and move an income-tax/ACC reserve based on your forecast. Reconcile it quarterly. Never finance ordinary spending with money set aside for government obligations.</p></div>
+      </section>
+
+      <section class="guide-section guide-section--white" aria-labelledby="dates-title">
+        <header class="guide-section__head reveal"><div><p class="eyebrow">Calendar</p><h2 id="dates-title">Track your dates<br />in myIR.</h2></div><p>Exact payment dates vary with balance date, filing frequency, method and extensions. Use myIR as the source of truth.</p></header>
+        <ol class="number-list reveal"><li><div><strong>31 March — common end of income year.</strong><p>Close records and confirm outstanding items.</p></div></li><li><div><strong>7 July — common IR3 filing deadline.</strong><p>Applies unless you have a tax agent or an extension of time.</p></div></li><li><div><strong>GST dates — based on your filing frequency.</strong><p>Monthly, two-monthly or six-monthly settings create different due dates.</p></div></li><li><div><strong>Provisional tax dates — based on your method.</strong><p>Do not copy dates from a blog; check the obligations shown in myIR.</p></div></li><li><div><strong>ACC invoice — budget separately.</strong><p>Check MyACC and the classification used after filing.</p></div></li></ol>
+        <div class="source-list reveal"><a href="https://www.ird.govt.nz/income-tax/income-tax-for-individuals/what-happens-at-the-end-of-the-tax-year/individual-income-tax-return---ir3/complete-my-individual-income-tax-return---ir3" target="_blank" rel="noreferrer">IRD complete an IR3 ↗</a><a href="https://www.ird.govt.nz/index/calendars-and-important-dates" target="_blank" rel="noreferrer">IRD dates ↗</a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>NZ tax planning guide / Last checked 12 August 2026</p><p>Calculator is an estimate only and excludes ACC, GST and personal adjustments.</p></footer>
+    <script src="script.js?v=20260812c" defer></script>
+    <script src="business-tools.js" defer></script>
+  </body>
+</html>

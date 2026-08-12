@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en-NZ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A sourced annual operating budget for Jamie Wilson's independent New Zealand web studio, including Codex, Figma, hosting, email, accounting, security, and alternatives."
+    />
+    <meta name="author" content="Jamie Wilson" />
+    <meta name="theme-color" content="#f2f0e8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Annual Studio Budget — Jamie Wilson" />
+    <meta property="og:description" content="What the studio needs, what can stay free, and what it costs over a year." />
+    <title>Budget — Jamie Wilson Web Studio</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css?v=20260812c" />
+  </head>
+  <body class="budget-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Jamie Wilson home">
+        <span class="brand-mark" aria-hidden="true">JW</span>
+        <span class="brand-copy">Jamie Wilson<br />Web design &amp; development</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-quick" href="start-here.html">Start here</a>
+        <a class="nav-quick" href="services.html">Services</a>
+        <a class="header-link" href="mailto:howemanning@gmail.com?subject=Website%20project%20enquiry">Start a project <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mega-menu">
+          <span>Menu</span><i aria-hidden="true"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero subpage-hero budget-hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span aria-hidden="true">●</span> Annual operating plan / Solo NZ web studio</p>
+          <h1 id="hero-title">Know the<br /><span>burn.</span></h1>
+          <p class="hero-intro">
+            Pay for the tools that create leverage. Keep the commodity infrastructure free until a real client requirement says otherwise.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#recommended-budget">See the recommendation <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#hosting">Compare hosting</a>
+          </div>
+        </div>
+
+        <aside class="budget-total-card" aria-label="Recommended annual budget summary">
+          <span>Recommended working stack</span>
+          <strong>NZ$5,286</strong>
+          <p>Per year / before GST</p>
+          <div><b>NZ$441</b><small>Monthly equivalent</small></div>
+          <small>Assumes NZ$50k self-employed income and a NZ$1.75/USD planning rate.</small>
+        </aside>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>PAY FOR LEVERAGE</span><i>✦</i><span>KEEP STATIC HOSTING FREE</span><i>✦</i><span>UPGRADE WHEN THE WORK DEMANDS IT</span><i>✦</i>
+          <span>PAY FOR LEVERAGE</span><i>✦</i><span>KEEP STATIC HOSTING FREE</span><i>✦</i><span>UPGRADE WHEN THE WORK DEMANDS IT</span><i>✦</i>
+        </div>
+      </div>
+
+      <section class="budget-recommendation" id="recommended-budget" aria-labelledby="budget-recommendation-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">The short answer</p>
+            <h2 id="budget-recommendation-title">Spend where<br />time compounds.</h2>
+          </div>
+          <p>Recommended now<br />Reviewed quarterly</p>
+        </div>
+
+        <div class="budget-verdict reveal">
+          <span>Recommendation</span>
+          <p>Keep the <strong>US$200/month Codex allowance</strong>, buy <strong>one Figma Professional seat</strong>, keep GitHub and this site’s hosting free, use Google Workspace for email, and use Hnry while operating as a sole trader.</p>
+        </div>
+
+        <div class="budget-decisions">
+          <article class="budget-decision budget-decision-blue reveal">
+            <span>01 / BUILD</span>
+            <strong>US$200</strong>
+            <h3>Codex allowance</h3>
+            <p>This is the largest cost and the clearest productivity bet. Track whether it saves at least three to four billable hours each month.</p>
+          </article>
+          <article class="budget-decision budget-decision-acid reveal">
+            <span>02 / DESIGN</span>
+            <strong>US$16</strong>
+            <h3>Figma Professional</h3>
+            <p>Use the annual plan for unlimited professional files, libraries, and cleaner client handoff. Starter remains the free fallback.</p>
+          </article>
+          <article class="budget-decision budget-decision-orange reveal">
+            <span>03 / HOST</span>
+            <strong>NZ$0</strong>
+            <h3>GitHub Pages</h3>
+            <p>This site is static and already deploys from GitHub. DigitalOcean or Cloudways adds cost without adding useful capability here.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="budget-chart-section" aria-labelledby="budget-chart-title">
+        <div class="budget-chart-heading reveal">
+          <p class="eyebrow">Recommended annual cost mix</p>
+          <h2 id="budget-chart-title">Most of the budget<br />is the builder.</h2>
+          <p>Figures use a conservative planning rate of NZ$1.75 per US$1. The latest <a href="https://www.rbnz.govt.nz/en/statistics/series/exchange-and-interest-rates/exchange-rates-and-the-trade-weighted-index" target="_blank" rel="noreferrer">RBNZ reference</a> available during this review implied roughly NZ$1.73 per US$1.</p>
+        </div>
+
+        <div class="budget-calculator reveal" data-budget-calculator>
+          <div class="calculator-copy">
+            <span>Adjust the Hnry assumption</span>
+            <strong data-total-output>NZ$5,286</strong>
+            <p><span data-monthly-output>NZ$441</span> monthly equivalent / before GST</p>
+          </div>
+          <label for="income-range">Expected self-employed income: <output for="income-range" data-income-output>NZ$50,000</output></label>
+          <input id="income-range" type="range" min="0" max="175000" step="5000" value="50000" data-income-input />
+          <p>Hnry allowance: <strong data-hnry-output>NZ$500</strong> / 1% of income, capped at NZ$1,500, plus GST.</p>
+        </div>
+
+        <figure class="cost-chart reveal" aria-labelledby="cost-chart-caption">
+          <figcaption id="cost-chart-caption">Annual recommended stack at NZ$50,000 self-employed income</figcaption>
+          <div class="cost-bar-row">
+            <div class="cost-bar-label"><span>Codex</span><strong>NZ$4,200</strong></div>
+            <div class="cost-bar-track"><span style="--bar: 79.5%"></span></div>
+          </div>
+          <div class="cost-bar-row">
+            <div class="cost-bar-label"><span>Hnry at $50k income</span><strong>NZ$500</strong></div>
+            <div class="cost-bar-track"><span style="--bar: 9.5%"></span></div>
+          </div>
+          <div class="cost-bar-row">
+            <div class="cost-bar-label"><span>Figma Professional</span><strong>NZ$336</strong></div>
+            <div class="cost-bar-track"><span style="--bar: 6.4%"></span></div>
+          </div>
+          <div class="cost-bar-row">
+            <div class="cost-bar-label"><span>Google Workspace</span><strong>NZ$126</strong></div>
+            <div class="cost-bar-track"><span style="--bar: 2.4%"></span></div>
+          </div>
+          <div class="cost-bar-row">
+            <div class="cost-bar-label"><span>Bitwarden Teams</span><strong>NZ$84</strong></div>
+            <div class="cost-bar-track"><span style="--bar: 1.6%"></span></div>
+          </div>
+          <div class="cost-bar-row">
+            <div class="cost-bar-label"><span>Domain allowance</span><strong>NZ$40</strong></div>
+            <div class="cost-bar-track"><span style="--bar: 0.8%"></span></div>
+          </div>
+        </figure>
+      </section>
+
+      <section class="budget-matrix-section" aria-labelledby="budget-matrix-title">
+        <div class="market-subhead reveal">
+          <div>
+            <p class="eyebrow">Core tool matrix</p>
+            <h2 id="budget-matrix-title">Buy / wait / skip.</h2>
+          </div>
+          <p>Annual costs are planning figures. USD products are converted at NZ$1.75. Promotions, tax, overages, and card FX fees are excluded.</p>
+        </div>
+        <p class="comparison-hint reveal" aria-hidden="true">Swipe to compare <span>→</span></p>
+        <div class="comparison-wrap reveal" tabindex="0" role="region" aria-label="Core studio tool pricing comparison; scroll horizontally on small screens">
+          <table class="comparison-table budget-table">
+            <caption class="sr-only">Recommended studio tools, alternatives, prices, and decisions.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Area</th>
+                <th scope="col">Recommended</th>
+                <th scope="col">Alternative</th>
+                <th scope="col">Annual budget</th>
+                <th scope="col">Decision</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="budget-recommended-row">
+                <th scope="row">AI development<span>Primary leverage</span></th>
+                <td><a href="https://developers.openai.com/api/docs/models/gpt-5-codex" target="_blank" rel="noreferrer">Codex allowance</a><br />US$200/month supplied budget</td>
+                <td>Metered API usage: GPT-5-Codex listed at US$1.25/M input and US$10/M output tokens.</td>
+                <td>NZ$4,200</td>
+                <td><strong>BUY</strong> — review usage monthly.</td>
+              </tr>
+              <tr>
+                <th scope="row">Interface design<span>Client files</span></th>
+                <td><a href="https://www.figma.com/professional/" target="_blank" rel="noreferrer">Figma Professional</a><br />US$16/month, annual billing</td>
+                <td>Figma Starter: free. Stay there until file/project limits or libraries become friction.</td>
+                <td>NZ$336</td>
+                <td><strong>BUY</strong> when client work begins.</td>
+              </tr>
+              <tr>
+                <th scope="row">Source control<span>Repos + deployment</span></th>
+                <td><a href="https://github.com/pricing" target="_blank" rel="noreferrer">GitHub Free</a></td>
+                <td>GitHub Team: US$4/user/month when protected workflows or a team justify it.</td>
+                <td>NZ$0</td>
+                <td><strong>KEEP FREE</strong> while solo.</td>
+              </tr>
+              <tr>
+                <th scope="row">Business email<span>One user</span></th>
+                <td><a href="https://workspace.google.com/intl/en_nz/business/" target="_blank" rel="noreferrer">Google Workspace Starter</a><br />NZ$10.50/month, annual commitment</td>
+                <td>Use aliases such as hello@ and accounts@ instead of paying for extra users.</td>
+                <td>NZ$126</td>
+                <td><strong>BUY</strong> — client trust and ownership.</td>
+              </tr>
+              <tr>
+                <th scope="row">Domain<span>Brand address</span></th>
+                <td>.co.nz or .com allowance</td>
+                <td>Provider pricing varies by TLD and renewal date.</td>
+                <td>NZ$40 allowance</td>
+                <td><strong>BUY</strong> in the business name.</td>
+              </tr>
+              <tr>
+                <th scope="row">Passwords<span>Client credentials</span></th>
+                <td><a href="https://bitwarden.com/pricing/" target="_blank" rel="noreferrer">Bitwarden Teams</a><br />US$4/user/month, annual billing</td>
+                <td>Bitwarden Free while solo and before storing shared client credentials.</td>
+                <td>NZ$84</td>
+                <td><strong>BUY</strong> before the first sensitive handoff.</td>
+              </tr>
+              <tr>
+                <th scope="row">Tax + accounting<span>Sole trader assumption</span></th>
+                <td><a href="https://hnry.co.nz/pricing/" target="_blank" rel="noreferrer">Hnry</a><br />1% of income, capped at NZ$1,500/year, plus GST</td>
+                <td><a href="https://www.xero.com/nz/pricing-plans/" target="_blank" rel="noreferrer">Xero Ignite</a>: NZ$35/month ex GST, plus an accountant if needed.</td>
+                <td>NZ$0–$1,500 + GST</td>
+                <td><strong>HNRY</strong> for sole trader simplicity; Xero if incorporated.</td>
+              </tr>
+              <tr>
+                <th scope="row">Analytics + uptime<span>Lightweight start</span></th>
+                <td>Cloudflare Web Analytics + provider monitoring</td>
+                <td>Upgrade only when a client needs deeper product analytics or an SLA.</td>
+                <td>NZ$0</td>
+                <td><strong>KEEP FREE</strong>.</td>
+              </tr>
+              <tr>
+                <th scope="row">Project admin<span>Solo workflow</span></th>
+                <td>GitHub Projects or a free task board</td>
+                <td>Paid PM software when collaborators or client portals create a real need.</td>
+                <td>NZ$0</td>
+                <td><strong>SKIP</strong> another subscription for now.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="hosting-section" id="hosting" aria-labelledby="hosting-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Hosting comparison</p>
+            <h2 id="hosting-title">Match the host<br />to the job.</h2>
+          </div>
+          <p>Annual NZD estimate<br />At NZ$1.75 / US$1</p>
+        </div>
+
+        <div class="hosting-verdict reveal">
+          <strong>For this website: pay NZ$0.</strong>
+          <p>Keep GitHub Pages. Use Cloudflare Pages or DigitalOcean App Platform for other static builds. Choose a DigitalOcean Droplet for custom servers only if you are comfortable maintaining Linux, security, monitoring, and backups. Choose Cloudways for managed WordPress/PHP work.</p>
+        </div>
+
+        <div class="hosting-layout">
+          <div class="comparison-wrap reveal" tabindex="0" role="region" aria-label="Hosting provider comparison; scroll horizontally on small screens">
+            <table class="comparison-table hosting-table">
+              <caption class="sr-only">Hosting options, pricing, management level, and best use.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Option</th>
+                  <th scope="col">Starting price</th>
+                  <th scope="col">You manage</th>
+                  <th scope="col">Best use</th>
+                  <th scope="col">Call</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="budget-recommended-row">
+                  <th scope="row"><a href="https://pages.github.com/" target="_blank" rel="noreferrer">GitHub Pages</a><span>Static hosting</span></th>
+                  <td>US$0 / NZ$0 yearly</td>
+                  <td>Code and DNS</td>
+                  <td>This agency site and simple brochure sites.</td>
+                  <td><strong>USE NOW</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://www.cloudflare.com/developer-platform/products/pages/" target="_blank" rel="noreferrer">Cloudflare Pages</a><span>Edge static platform</span></th>
+                  <td>Free; Workers paid from US$5/month</td>
+                  <td>Code; minimal infrastructure</td>
+                  <td>Fast static sites and lightweight serverless functions.</td>
+                  <td><strong>BEST NEXT STEP</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://www.digitalocean.com/pricing/app-platform" target="_blank" rel="noreferrer">DO App Platform</a><span>Managed app platform</span></th>
+                  <td>Up to 3 static apps free</td>
+                  <td>Code and application settings</td>
+                  <td>Static sites now; containers later without managing a VM.</td>
+                  <td><strong>GOOD DEFAULT</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://www.digitalocean.com/pricing/droplets" target="_blank" rel="noreferrer">DO Droplet / 1GB</a><span>Self-managed VPS</span></th>
+                  <td>US$6/month / ~NZ$126 yearly</td>
+                  <td>OS, patches, firewall, backups, runtime, uptime</td>
+                  <td>APIs, databases, and persistent custom applications.</td>
+                  <td><strong>ONLY WHEN NEEDED</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer">Netlify Personal</a><span>Managed frontend platform</span></th>
+                  <td>US$9/month / ~NZ$189 yearly</td>
+                  <td>Code and usage credits</td>
+                  <td>Forms, deploy previews, and a managed frontend workflow.</td>
+                  <td><strong>OPTIONAL</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://www.cloudways.com/en/pricing.php" target="_blank" rel="noreferrer">Cloudways</a><span>Managed cloud server</span></th>
+                  <td>From US$11/month / ~NZ$231 yearly</td>
+                  <td>WordPress/app; platform handles much of the server</td>
+                  <td>Managed WordPress, WooCommerce, PHP, and client staging.</td>
+                  <td><strong>WORDPRESS PICK</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://vercel.com/pricing" target="_blank" rel="noreferrer">Vercel Pro</a><span>Commercial frontend platform</span></th>
+                  <td>US$20/month / ~NZ$420 yearly</td>
+                  <td>Code and usage budget</td>
+                  <td>Commercial Next.js applications and preview-heavy teams.</td>
+                  <td><strong>FRAMEWORK-SPECIFIC</strong></td>
+                </tr>
+                <tr>
+                  <th scope="row"><a href="https://www.netlify.com/pricing/" target="_blank" rel="noreferrer">Netlify Pro</a><span>Team frontend platform</span></th>
+                  <td>US$20/month / ~NZ$420 yearly</td>
+                  <td>Code and usage credits</td>
+                  <td>Team collaboration and higher production usage.</td>
+                  <td><strong>WAIT FOR TEAM</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <figure class="hosting-chart reveal" aria-labelledby="hosting-chart-caption">
+            <figcaption id="hosting-chart-caption">Approximate annual platform cost in NZD</figcaption>
+            <div class="hosting-bar"><span>GitHub Pages</span><i style="--bar: 1%"></i><strong>$0</strong></div>
+            <div class="hosting-bar"><span>DO Droplet</span><i style="--bar: 30%"></i><strong>$126</strong></div>
+            <div class="hosting-bar"><span>Netlify Personal</span><i style="--bar: 45%"></i><strong>$189</strong></div>
+            <div class="hosting-bar"><span>Cloudways</span><i style="--bar: 55%"></i><strong>$231</strong></div>
+            <div class="hosting-bar"><span>Vercel Pro</span><i style="--bar: 100%"></i><strong>$420</strong></div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="budget-scenarios" aria-labelledby="budget-scenarios-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Three useful scenarios</p>
+            <h2 id="budget-scenarios-title">How lean<br />do you go?</h2>
+          </div>
+          <p>All include Codex<br />Hnry at NZ$50k income</p>
+        </div>
+        <div class="scenario-grid">
+          <article class="scenario-card reveal">
+            <span>LEAN LAUNCH</span>
+            <strong>NZ$4,866</strong>
+            <p>Codex, free Figma, GitHub Pages, Google Workspace, domain allowance, free Bitwarden, and Hnry.</p>
+          </article>
+          <article class="scenario-card scenario-recommended reveal">
+            <span>RECOMMENDED</span>
+            <strong>NZ$5,286</strong>
+            <p>Add Figma Professional and Bitwarden Teams for a smoother, safer client workflow.</p>
+          </article>
+          <article class="scenario-card reveal">
+            <span>MANAGED WORDPRESS</span>
+            <strong>NZ$5,517</strong>
+            <p>The recommended stack plus one entry Cloudways server. Pass client-specific hosting through to the client where possible.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="budget-exclusions" aria-labelledby="budget-exclusions-title">
+        <div class="budget-exclusions-copy reveal">
+          <p class="eyebrow">Keep a separate allowance</p>
+          <h2 id="budget-exclusions-title">Costs that depend<br />on the business.</h2>
+        </div>
+        <div class="exclusion-list reveal">
+          <div><span>01</span><p><strong>GST and foreign-card fees.</strong> Totals above are before GST and use a planning exchange rate, not your card provider’s final rate.</p></div>
+          <div><span>02</span><p><strong>Insurance.</strong> Professional indemnity and public liability pricing needs a quote based on revenue, work type, and cover.</p></div>
+          <div><span>03</span><p><strong>Hardware and connectivity.</strong> Laptop, monitor, phone, broadband, and replacement reserves are not included.</p></div>
+          <div><span>04</span><p><strong>Client-specific services.</strong> Domains, email, paid plugins, databases, transaction fees, stock assets, and production hosting should normally stay in the client’s name.</p></div>
+          <div><span>05</span><p><strong>Sales and marketing.</strong> Advertising, networking, sponsorship, photography, and printed collateral remain optional growth spend.</p></div>
+        </div>
+        <p class="budget-sources reveal">Prices checked 12 Aug 2026 from linked official provider pages. USD conversions use NZ$1.75/US$1 as a budgeting rate; the <a href="https://www.rbnz.govt.nz/en/statistics/series/exchange-and-interest-rates/exchange-rates-and-the-trade-weighted-index" target="_blank" rel="noreferrer">RBNZ B1 reference</a> available during review showed NZD/USD around 0.577. Prices, included usage, tax treatment, and promotions can change—confirm before purchase.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Jamie Wilson / Web design &amp; development</p>
+      <p>Christchurch, New Zealand / <span data-year>2026</span></p>
+    </footer>
+
+    <script src="script.js?v=20260812c" defer></script>
+  </body>
+</html>
