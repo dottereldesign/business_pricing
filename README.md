@@ -16,7 +16,7 @@ A static website for Jamie Wilson's independent web design and development studi
 - `sales.html` — pipeline, discovery, proposal, follow-up, and qualification playbook
 - `operations.html` — delivery workflow, scope, QA, launch, and security playbook
 - `names.html` — 4,351 registry-screened business-name prompts, 220 JW directions, and a searchable bank of 1,000 satisfying words
-- `logos.html` — four-column gallery of individual JW logo explorations and intact presentation boards
+- `logos.html` — four-column gallery of 252 individual JW logo explorations and three intact presentation boards
 
 All draft pages use the shared full-screen menu from `script.js`. Each draft link is followed by a working `(final)` holding page in the menu, ready for approved material to be promoted later. Interactive planning tools live in `business-tools.js`; generated names live in `names.js`, and the phonaesthetic inspiration bank lives in `sound-words.js`.
 
