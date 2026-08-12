@@ -32,6 +32,8 @@ if (menuButton) {
             <a class="mega-menu__final-link" href="services-final.html">Services (final)</a>
             <a href="names.html">4,351 names</a>
             <a class="mega-menu__final-link" href="names-final.html">4,351 names (final)</a>
+            <a href="logos.html">Logo gallery</a>
+            <a class="mega-menu__final-link" href="logos-final.html">Logo gallery (final)</a>
           </section>
           <section>
             <p>02 / Find work</p>
