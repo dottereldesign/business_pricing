@@ -7,30 +7,41 @@ const croppedLogoSheets = [
 ];
 
 const intactLogoBoards = [17, 22, 23, 56, 57, 58, 59];
+const favouriteLogos = [
+  [7, 2],
+  [13, 2],
+  [12, 9],
+  [16, 6],
+  [30, 5],
+  [32, 6],
+  [34, 2],
+  [37, 5],
+  [34, 9],
+  [34, 6],
+  [37, 9],
+  [39, 3],
+  [39, 7],
+  [42, 1],
+  [44, 1],
+  [44, 3],
+];
+
 const logoGallery = document.querySelector("[data-logo-gallery]");
+const logoFavourites = document.querySelector("[data-logo-favourites]");
 const logoCount = document.querySelector("[data-logo-count]");
 
-if (logoGallery) {
-  const items = [
-    ...croppedLogoSheets.flatMap((sheet) =>
-      Array.from({ length: 9 }, (_, index) => {
-        const row = Math.floor(index / 3) + 1;
-        const column = (index % 3) + 1;
-        return {
-          src: `assets/logos/logo-${String(sheet).padStart(2, "0")}-${row}${column}.webp`,
-          alt: `JW logo concept from sheet ${sheet}, option ${index + 1}`,
-          label: `Sheet ${String(sheet).padStart(2, "0")} / ${String(index + 1).padStart(2, "0")}`,
-        };
-      })
-    ),
-    ...intactLogoBoards.map((board) => ({
-      src: `assets/logos/board-${String(board).padStart(2, "0")}.webp`,
-      alt: `Complete logo presentation board ${board}`,
-      label: `Board ${String(board).padStart(2, "0")} / Full sheet`,
-      board: true,
-    })),
-  ];
+const makeLogoItem = (sheet, option) => {
+  const row = Math.floor((option - 1) / 3) + 1;
+  const column = ((option - 1) % 3) + 1;
 
+  return {
+    src: `assets/logos/logo-${String(sheet).padStart(2, "0")}-${row}${column}.webp`,
+    alt: `JW logo concept from sheet ${sheet}, option ${option}`,
+    label: `Sheet ${String(sheet).padStart(2, "0")} / ${String(option).padStart(2, "0")}`,
+  };
+};
+
+const renderLogoItems = (container, items, favourite = false) => {
   const fragment = document.createDocumentFragment();
 
   items.forEach((item) => {
@@ -39,7 +50,7 @@ if (logoGallery) {
     const image = document.createElement("img");
     const caption = document.createElement("figcaption");
 
-    figure.className = `logo-gallery__item${item.board ? " logo-gallery__item--board" : ""}`;
+    figure.className = `logo-gallery__item${item.board ? " logo-gallery__item--board" : ""}${favourite ? " logo-gallery__item--favourite" : ""}`;
     link.href = item.src;
     link.target = "_blank";
     link.rel = "noreferrer";
@@ -57,6 +68,30 @@ if (logoGallery) {
     fragment.append(figure);
   });
 
-  logoGallery.append(fragment);
+  container.append(fragment);
+};
+
+if (logoFavourites) {
+  renderLogoItems(
+    logoFavourites,
+    favouriteLogos.map(([sheet, option]) => makeLogoItem(sheet, option)),
+    true
+  );
+}
+
+if (logoGallery) {
+  const items = [
+    ...croppedLogoSheets.flatMap((sheet) =>
+      Array.from({ length: 9 }, (_, index) => makeLogoItem(sheet, index + 1))
+    ),
+    ...intactLogoBoards.map((board) => ({
+      src: `assets/logos/board-${String(board).padStart(2, "0")}.webp`,
+      alt: `Complete logo presentation board ${board}`,
+      label: `Board ${String(board).padStart(2, "0")} / Full sheet`,
+      board: true,
+    })),
+  ];
+
+  renderLogoItems(logoGallery, items);
   logoCount.textContent = `${items.length} images / 468 individual marks + 7 intact boards`;
 }
