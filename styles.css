@@ -85,15 +85,15 @@ a {
 }
 
 .brand-mark {
-  display: grid;
+  display: block;
+  flex: 0 0 42px;
   width: 42px;
-  aspect-ratio: 1;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--ink);
-  color: var(--paper);
-  font-size: 0.8rem;
-  letter-spacing: -0.03em;
+  aspect-ratio: 574 / 370;
+  border-radius: 0;
+  background: transparent url("assets/logos/logo-01.svg") center / contain no-repeat;
+  color: transparent;
+  font-size: 0;
+  filter: brightness(0);
 }
 
 .header-link,
@@ -2651,8 +2651,8 @@ body.menu-open {
 }
 
 .brand--inverse .brand-mark {
-  background: var(--acid);
-  color: var(--ink);
+  background-color: transparent;
+  filter: brightness(0) invert(1);
 }
 
 .menu-close {
