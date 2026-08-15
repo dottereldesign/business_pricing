@@ -90,10 +90,11 @@ a {
   width: 42px;
   aspect-ratio: 574 / 370;
   border-radius: 0;
-  background: transparent url("assets/logos/logo-01.svg") center / contain no-repeat;
+  background: #201408;
   color: transparent;
   font-size: 0;
-  filter: brightness(0);
+  -webkit-mask: url("assets/logos/logo-01.svg") center / contain no-repeat;
+  mask: url("assets/logos/logo-01.svg") center / contain no-repeat;
 }
 
 .header-link,
@@ -1099,6 +1100,23 @@ h1 span {
 }
 
 /* Homepage */
+
+.home-logo-hero {
+  min-height: clamp(420px, 68vh, 760px);
+  display: grid;
+  place-items: center;
+  padding: clamp(3rem, 8vw, 8rem) var(--gutter);
+  background: #201408;
+}
+
+.home-logo-hero-mark {
+  display: block;
+  width: min(82vw, 900px);
+  aspect-ratio: 574 / 370;
+  background: #f5efe2;
+  -webkit-mask: url("assets/logos/logo-01.svg") center / contain no-repeat;
+  mask: url("assets/logos/logo-01.svg") center / contain no-repeat;
+}
 
 .home-hero {
   grid-template-columns: minmax(0, 1fr) minmax(270px, 0.3fr);
@@ -2651,8 +2669,7 @@ body.menu-open {
 }
 
 .brand--inverse .brand-mark {
-  background-color: transparent;
-  filter: brightness(0) invert(1);
+  background: #f5efe2;
 }
 
 .menu-close {
