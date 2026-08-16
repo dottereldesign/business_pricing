@@ -90,7 +90,7 @@ a {
   width: 42px;
   aspect-ratio: 574 / 370;
   border-radius: 0;
-  background: #201408;
+  background: #11110f;
   color: transparent;
   font-size: 0;
   -webkit-mask: url("assets/logos/logo-01.svg") center / contain no-repeat;
@@ -1106,12 +1106,12 @@ h1 span {
   display: grid;
   place-items: center;
   padding: clamp(3rem, 8vw, 8rem) var(--gutter);
-  background: #201408;
+  background: #11110f;
 }
 
 .home-logo-hero-mark {
   display: block;
-  width: min(82vw, 900px);
+  width: min(38vw, 380px);
   aspect-ratio: 574 / 370;
   background: #f5efe2;
   -webkit-mask: url("assets/logos/logo-01.svg") center / contain no-repeat;
