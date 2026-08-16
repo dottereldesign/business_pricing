@@ -144,6 +144,7 @@ a {
 .site-nav .header-link {
   padding: 0.75rem 0.85rem;
   border: 2px solid var(--ink);
+  border-radius: 10px;
   background: var(--acid);
   box-shadow: 3px 3px 0 var(--ink);
   transition: transform 150ms ease, box-shadow 150ms ease;
@@ -255,6 +256,7 @@ h1 span {
   gap: 2rem;
   padding: 0.9rem 1.1rem;
   border: var(--border);
+  border-radius: 10px;
   box-shadow: 6px 6px 0 var(--ink);
   font-size: 0.78rem;
   font-weight: 900;
@@ -1105,8 +1107,11 @@ h1 span {
   min-height: clamp(420px, 68vh, 760px);
   display: grid;
   place-items: center;
+  margin-inline: 8px;
   padding: clamp(3rem, 8vw, 8rem) var(--gutter);
   background: #11110f;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .home-logo-hero-mark {
