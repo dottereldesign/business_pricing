@@ -3,15 +3,20 @@ document.querySelectorAll("[data-year]").forEach((element) => {
 });
 
 document.querySelectorAll(".site-footer").forEach((footer) => {
-  if (footer.querySelector('a[href="brainstorm.html"]')) return;
   const footerLine = footer.querySelector("p:last-child");
   if (!footerLine) return;
 
-  const separator = document.createTextNode(" / ");
-  const brainstormLink = document.createElement("a");
-  brainstormLink.href = "brainstorm.html";
-  brainstormLink.textContent = "Brainstorm";
-  footerLine.append(separator, brainstormLink);
+  [
+    { href: "brainstorm.html", label: "Brainstorm" },
+    { href: "name-check.html", label: "Name check" },
+  ].forEach(({ href, label }) => {
+    if (footer.querySelector(`a[href="${href}"]`)) return;
+    const separator = document.createTextNode(" / ");
+    const link = document.createElement("a");
+    link.href = href;
+    link.textContent = label;
+    footerLine.append(separator, link);
+  });
 });
 
 const menuButton = document.querySelector("[data-menu-toggle]");
