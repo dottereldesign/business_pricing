@@ -2,6 +2,18 @@ document.querySelectorAll("[data-year]").forEach((element) => {
   element.textContent = new Date().getFullYear();
 });
 
+document.querySelectorAll(".site-footer").forEach((footer) => {
+  if (footer.querySelector('a[href="brainstorm.html"]')) return;
+  const footerLine = footer.querySelector("p:last-child");
+  if (!footerLine) return;
+
+  const separator = document.createTextNode(" / ");
+  const brainstormLink = document.createElement("a");
+  brainstormLink.href = "brainstorm.html";
+  brainstormLink.textContent = "Brainstorm";
+  footerLine.append(separator, brainstormLink);
+});
+
 const menuButton = document.querySelector("[data-menu-toggle]");
 
 if (menuButton) {
