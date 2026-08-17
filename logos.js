@@ -4,9 +4,13 @@ const croppedLogoSheets = [
   28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
   40, 41, 42, 43,
   44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55,
+  60, 61, 62, 63, 64, 65, 66, 67,
 ];
 
 const intactLogoBoards = [17, 22, 23, 56, 57, 58, 59];
+const newFavouriteLogos = [60, 61, 62, 63, 64, 65, 66, 67].flatMap((sheet) =>
+  Array.from({ length: 9 }, (_, index) => [sheet, index + 1])
+);
 const favouriteLogos = [
   [7, 2],
   [13, 2],
@@ -36,7 +40,7 @@ const makeLogoItem = (sheet, option) => {
 
   return {
     src: `assets/logos/logo-${String(sheet).padStart(2, "0")}-${row}${column}.webp`,
-    alt: `JW logo concept from sheet ${sheet}, option ${option}`,
+    alt: `BC logo concept from sheet ${sheet}, option ${option}`,
     label: `Sheet ${String(sheet).padStart(2, "0")} / ${String(option).padStart(2, "0")}`,
   };
 };
@@ -74,7 +78,9 @@ const renderLogoItems = (container, items, favourite = false) => {
 if (logoFavourites) {
   renderLogoItems(
     logoFavourites,
-    favouriteLogos.map(([sheet, option]) => makeLogoItem(sheet, option)),
+    [...newFavouriteLogos, ...favouriteLogos].map(([sheet, option]) =>
+      makeLogoItem(sheet, option)
+    ),
     true
   );
 }
@@ -93,5 +99,5 @@ if (logoGallery) {
   ];
 
   renderLogoItems(logoGallery, items);
-  logoCount.textContent = `${items.length} images / 468 individual marks + 7 intact boards`;
+  logoCount.textContent = `${items.length} images / 540 individual marks + 7 intact boards`;
 }
