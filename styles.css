@@ -2752,6 +2752,206 @@ h1 span {
   line-height: 1.45;
 }
 
+.name-check-application {
+  background: var(--acid);
+}
+
+.application-note {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.3fr) 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: var(--border);
+  border-radius: 12px;
+  background: var(--orange);
+}
+
+.application-note strong {
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.application-note p {
+  max-width: 900px;
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.application-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: var(--border);
+  border-left: var(--border);
+}
+
+.application-grid article {
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.5rem, 3vw, 2.75rem);
+  border-right: var(--border);
+  border-bottom: var(--border);
+  background: var(--white);
+}
+
+.application-grid article:nth-child(2) {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.application-grid article:nth-child(3) {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.application-grid article > span {
+  margin-bottom: auto;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.application-grid h3 {
+  max-width: 620px;
+  margin: 2rem 0 1rem;
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 900;
+  letter-spacing: -0.055em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.application-grid ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.application-grid li {
+  margin: 0.45rem 0;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.application-costs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 2rem;
+  border-top: var(--border);
+  border-left: var(--border);
+}
+
+.application-costs div {
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-right: var(--border);
+  border-bottom: var(--border);
+  background: var(--paper);
+}
+
+.application-costs span,
+.application-costs small {
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.application-costs strong {
+  margin-top: auto;
+  font-size: clamp(2.2rem, 4.5vw, 4.8rem);
+  letter-spacing: -0.07em;
+  line-height: 0.9;
+}
+
+.application-cost-note {
+  max-width: 1000px;
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.application-process {
+  margin-top: clamp(3rem, 7vw, 7rem);
+}
+
+.application-process > h3 {
+  max-width: 800px;
+  margin-bottom: 2rem;
+  font-size: clamp(2.8rem, 6vw, 6.5rem);
+  font-weight: 900;
+  letter-spacing: -0.065em;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.application-process ol {
+  margin: 0;
+  padding: 0;
+  border-top: var(--border);
+  list-style: none;
+}
+
+.application-process li {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 2rem;
+  padding: 1.4rem 0;
+  border-bottom: var(--border);
+}
+
+.application-process li > span {
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.application-process strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: clamp(1.2rem, 2.2vw, 2rem);
+  letter-spacing: -0.03em;
+}
+
+.application-process p {
+  max-width: 850px;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.application-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.application-links a {
+  padding: 0.8rem 1rem;
+  border: var(--border);
+  border-radius: 10px;
+  background: var(--white);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.application-links a:hover,
+.application-links a:focus-visible {
+  background: var(--ink);
+  color: var(--white);
+}
+
 .name-check-sources {
   padding: clamp(3rem, 6vw, 5rem) var(--gutter);
   background: var(--paper);
@@ -2847,6 +3047,21 @@ h1 span {
   .name-check-next li {
     grid-template-columns: 52px 1fr;
     gap: 1rem;
+  }
+
+  .application-note,
+  .application-process li {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .application-grid,
+  .application-costs {
+    grid-template-columns: 1fr;
+  }
+
+  .application-grid article {
+    min-height: 330px;
   }
 }
 
