@@ -7,10 +7,11 @@ const croppedLogoSheets = [
   60, 61, 62, 63, 64, 65, 66, 67,
   68, 69, 70, 71,
   72, 73, 74, 75,
+  76, 77, 78, 79,
 ];
 
 const intactLogoBoards = [17, 22, 23, 56, 57, 58, 59];
-const newFavouriteLogos = [72, 73, 74, 75, 68, 69, 70, 71, 60, 61, 62, 63, 64, 65, 66, 67].flatMap((sheet) =>
+const newFavouriteLogos = [76, 77, 78, 79, 72, 73, 74, 75, 68, 69, 70, 71, 60, 61, 62, 63, 64, 65, 66, 67].flatMap((sheet) =>
   Array.from({ length: 9 }, (_, index) => [sheet, index + 1])
 );
 const favouriteLogos = [
@@ -101,5 +102,5 @@ if (logoGallery) {
   ];
 
   renderLogoItems(logoGallery, items);
-  logoCount.textContent = `${items.length} images / 612 individual marks + 7 intact boards`;
+  logoCount.textContent = `${items.length} images / 648 individual marks + 7 intact boards`;
 }
