@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A minimal gallery of 691 BC logo concepts and presentation boards." />
+    <meta name="description" content="A minimal gallery of 727 BC logo concepts and presentation boards." />
     <meta name="author" content="Jamie Wilson" />
     <meta name="theme-color" content="#f2f0e8" />
     <title>Logo Gallery — Jamie Wilson</title>
     <script>document.documentElement.classList.add("js");</script>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20260817e" />
+    <link rel="stylesheet" href="styles.css?v=20260818f" />
   </head>
   <body class="guide-page logos-page">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -22,13 +22,26 @@
         <div class="logo-gallery-hero__meta"><p>Every 3×3 concept sheet has been separated into individual marks. The larger exploration boards remain intact.</p><span data-logo-count>Loading gallery…</span></div>
       </section>
 
+      <aside class="logo-selection" data-logo-selection aria-labelledby="selection-title">
+        <div class="logo-selection__intro">
+          <p class="eyebrow">Selection basket</p>
+          <h2 id="selection-title">Pick the ones<br />you want to discuss.</h2>
+          <p>Click any logo to add or remove it. The list uses exact sheet and option IDs, so you can copy it and paste it back here for changes.</p>
+        </div>
+        <div class="logo-selection__panel">
+          <div class="logo-selection__topline"><strong><span data-selection-count>0</span> selected</strong><button type="button" data-clear-selection>Clear all</button></div>
+          <ol class="logo-selection__list" data-selection-list><li class="logo-selection__empty">Nothing selected yet.</li></ol>
+          <div class="logo-selection__actions"><button class="logo-selection__copy" type="button" data-copy-selection>Copy selected list</button><span class="logo-selection__status" data-selection-status role="status" aria-live="polite"></span></div>
+        </div>
+      </aside>
+
       <section class="logo-favourites-section" aria-labelledby="favourites-title">
         <div class="logo-gallery-section__heading">
           <div>
             <p class="eyebrow">Current shortlist</p>
             <h2 id="favourites-title">Favourites.</h2>
           </div>
-          <p>232 selected / newest 36 first</p>
+          <p>268 selected / newest 36 first</p>
         </div>
         <div class="logo-gallery logo-gallery--favourites" data-logo-favourites></div>
       </section>
@@ -52,14 +65,14 @@
       <section class="logo-gallery-section" aria-labelledby="all-logos-title">
         <div class="logo-gallery-section__heading">
           <h2 id="all-logos-title">All concepts.</h2>
-          <p>691 images</p>
+          <p>727 images</p>
         </div>
         <div class="logo-gallery" data-logo-gallery></div>
       </section>
     </main>
 
-    <footer class="site-footer"><p>691 logo images / Source files preserved</p><p>Click any concept to open the full image.</p></footer>
+    <footer class="site-footer"><p>727 logo images / Source files preserved</p><p>Click any concept to open the full image.</p></footer>
     <script src="script.js?v=20260812d" defer></script>
-    <script src="logos.js?v=20260818b" defer></script>
+    <script src="logos.js?v=20260818c" defer></script>
   </body>
 </html>
